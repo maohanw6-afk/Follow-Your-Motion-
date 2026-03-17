@@ -37,7 +37,8 @@ activate Fym
 ##Using dowload script
  # Download 1.3B model
 ```bash
-python examples
+python examples/download_model.py --1.3b
+```
 
  
 ## 📦 Installation & Setup
@@ -58,15 +59,8 @@ cd Follow-Your-Motion
 pip install -r requirements.txt
 ```
 💻 Usage Guide
-## Step 1: Download the Wan2.1-T2V-1.3B Model
 
-First, download the pre-trained model from Hugging Face:
 
-```bash
-python -c "from huggingface_hub import snapshot_download; snapshot_download(repo_id='Wan-AI/Wan2.1-T2V-1.3B', local_dir='examples/wanvideo/Wan2.1-T2V-1.3B', resume_download=True)"
-```
-
-Note: You may need to adjust the `local_dir` path to match your directory structure.
 
 ## Step 2: Prepare Your Dataset
 
