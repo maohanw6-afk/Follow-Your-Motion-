@@ -1,9 +1,8 @@
-# Follow-Your-Motion 
+# Follow-Your-Motion: Video Motion Transfer via Efficient Spatial-Temporal Decoupled Finetuning
 
 ## 📺  Demo Video
 
 https://github.com/user-attachments/assets/6677745d-b869-43b2-8da1-0e4d3ec6564c
-
 
 
 ## 📖 Introduction
@@ -12,6 +11,7 @@ This project is an advanced enhancement based on the **Wan2.1** foundation model
 
 By training custom **Temporal LoRAs** and **Spatial LoRAs** on input video sequences, the model learns to capture precise motion dynamics and spatial structures. Once the weights are obtained, our inference pipeline generates new videos that faithfully "follow" the movements of the reference source.
 
+
 ## 🚀 Key Features
 
 * **Dual-LoRA Training**: Support for training both Temporal and Spatial LoRAs to achieve superior motion fidelity.
@@ -19,7 +19,6 @@ By training custom **Temporal LoRAs** and **Spatial LoRAs** on input video seque
 * **Optimized for Consumer GPUs**: We highly recommend using the **Wan2.1-T2V-1.3B** model, which is optimized for efficiency without sacrificing quality.
 * **Memory Efficiency**: Integrated with **Tiled VAE** technology and memory-offloading strategies.
 
----
 
 ## ⚙️ Setup Environment
 ```bash
@@ -27,9 +26,14 @@ By training custom **Temporal LoRAs** and **Spatial LoRAs** on input video seque
 conda create -n Fym python=3.10
 activate Fym
 
+```
 
+Requirements
+ · Python 3.10+
+ · Pytorch 2.0+
+ · CUDA 12.x
 
-
+ 
 ## 📦 Installation & Setup
 
 ### 1. Prerequisites
@@ -46,7 +50,7 @@ cd Follow-Your-Motion
 
 # Install required packages
 pip install -r requirements.txt
-
+```
 💻 Usage Guide
 ## Step 1: Download the Wan2.1-T2V-1.3B Model
 
