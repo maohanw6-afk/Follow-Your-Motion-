@@ -28,10 +28,16 @@ activate Fym
 
 ```
 
-Requirements
+## Requirements
  · Python 3.10+
  · Pytorch 2.0+
  · CUDA 12.x
+
+
+##Using dowload script
+ # Download 1.3B model
+```bash
+python examples
 
  
 ## 📦 Installation & Setup
